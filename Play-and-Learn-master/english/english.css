@@ -1,0 +1,265 @@
+body {
+    margin: 0px;
+    padding: 25px;
+    background-color: black;
+    color: white;
+    font-size: 30;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.nav-wrapper {
+    display:flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.site-name {
+    font-family: 'Brush Script MT', cursive;
+}
+
+.right-side {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-wrapper > .right-side > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid seagreen;
+}
+
+.nav-link-wrapper a:hover {
+    color: seagreen;
+}
+
+/* Slider code */
+input {
+    -webkit-appearance: none;
+    position: relative;
+    width: 80px;
+    height: 40px;
+    background-image: url(https://i.postimg.cc/857jHw2q/Screenshot-2020-04-16-at-1-07-06-PM.png);
+    background-size: cover;
+    border-radius: 50px;
+    outline: none;
+    transition: background-image .90s;
+    box-shadow: 0px 2px 5px 1px gray;
+}
+
+input:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 40px;;
+    border-radius: 50px;
+    transition: all .9s;
+    background-color:  #F7CA33;
+}
+
+input:checked {
+    background-image: url(https://i.postimg.cc/Hn0nstVK/Screenshot-2020-04-16-at-1-07-19-PM.png);
+    transition: background-image .90s;
+    background-size: cover;
+}
+
+input:checked:before {
+    transform: translate(100%);
+    transition: all .9s;
+    background-color: #ECF0F3;
+}
+
+.dark-mode {
+    background-color: white;
+    color: black;
+}
+
+.hello-text {
+    text-align: center;
+}
+
+/* old project */
+
+.game-board {
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 400px 400px 400px;
+}
+
+/* for some css stylings */
+body {
+
+  justify-content: center;
+}
+.box {
+  background: #444;
+  border: 1px solid #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #AAA;
+}
+
+
+
+/* Alphabet Identification */
+
+.wrapper {
+    display :flex;
+    flex-direction : column;
+    background : #FEC5E5;          /*radial-gradient*/
+}
+
+.scoreboard {
+    margin: auto;
+}
+
+.title {
+    padding-left : 30px;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px 50px;
+    margin: 10px 0;
+  }
+  
+  .score h1 {
+      margin-bottom : -00px;
+    color: #565468;
+    font-size: 56px;
+    font-family: "Barlow", sans-serif;
+  }
+  
+
+  /*Game 1 */
+
+.alphabets {
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    
+}
+
+
+.options {
+    z-index: 10;
+    position: relative;
+}
+
+.options img {
+    opacity: 1;
+    width: 150px;
+    height: 150px;
+    display: block;
+}
+
+.alphabets .option1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+} 
+  
+.alphabets .alphabet {
+    cursor: pointer;
+    transition: all 0.25s;
+}
+  
+.alphabets .alphabet:hover {
+    transform: translate3d(0px, -8px, 0px);
+}
+
+.grid {
+    width: 700px;
+    height: 650px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 10px 50px 50px 50px;
+    border-radius: 50px;
+    border: 2px solid #cbcbcb;
+    box-shadow: 10px 15px 5px #cdcbcb;
+}
+
+.grid h1 {
+    font-family: "sans-serif";
+    background-color: #a741f0;
+    font-size: 60px;
+    text-align: center;
+    color: #ffffff;
+    padding: 2px 0px;
+    border-radius: 50px;
+}
+
+#score {
+    color: #5A6772;
+    text-align: center;
+    font-size: 30px;
+}
+
+.grid #question {
+    font-family: "monospace";
+    font-size: 30px;
+    color: #5A6672;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+#bt0, #bt1, #bt2, #bt3 {
+    background-color: #510b84;
+    width: 250px;
+    font-size: 20px;
+    color: #fff;
+    border: 1px solid #1D3C6A;
+    border-radius: 50px;
+    margin: 10px 40px 10px 0px;
+    padding: 10px 10px;
+}
+
+#bt0:hover, #bt1:hover, #bt2:hover, #bt3:hover {
+    cursor:pointer;
+    background-color: #a741f0;
+}
+
+#bt0:focus, #bt1:focus, #bt2:focus, #bt3:focus {
+    outline: 0;
+}
+
+#progress {
+    color: #2b2b2b;
+    font-size: 18px;
+}
+
+
+
+

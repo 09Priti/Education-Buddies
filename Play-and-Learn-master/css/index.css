@@ -1,0 +1,220 @@
+
+body {
+    margin: 0px;
+    padding: 25px;
+    background-color: black;
+    color: white;
+    font-size: 30;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.nav-wrapper {
+    display:flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.site-name {
+    font-family: 'Brush Script MT', cursive;
+}
+
+.right-side {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-wrapper > .right-side > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid seagreen;
+}
+
+.nav-link-wrapper a:hover {
+    color: seagreen;
+}
+
+/* Slider code */
+input {
+    -webkit-appearance: none;
+    position: relative;
+    width: 80px;
+    height: 40px;
+    background-image: url(https://i.postimg.cc/857jHw2q/Screenshot-2020-04-16-at-1-07-06-PM.png);
+    background-size: cover;
+    border-radius: 50px;
+    outline: none;
+    transition: background-image .90s;
+    box-shadow: 0px 2px 5px 1px gray;
+}
+
+input:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 40px;;
+    border-radius: 50px;
+    transition: all .9s;
+    background-color:  #F7CA33;
+}
+
+input:checked {
+    background-image: url(https://i.postimg.cc/Hn0nstVK/Screenshot-2020-04-16-at-1-07-19-PM.png);
+    transition: background-image .90s;
+    background-size: cover;
+}
+
+input:checked:before {
+    transform: translate(100%);
+    transition: all .9s;
+    background-color: #ECF0F3;
+}
+
+.dark-mode {
+    background-color: white;
+    color: black;
+}
+
+.hello-text {
+    text-align: center;
+}
+
+/* waving hand */
+.wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+  }
+
+  /* waving hand ends */
+
+  .kitty-img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 20%;
+  }
+
+  .intro-text {
+      text-align: center;
+  }
+ 
+  /* bUTTONS */
+  .buttons {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+  }
+  .button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 300px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  /* english.html */
+  .item1 {
+    grid-area: a;
+    background-color: #f49ac2;
+  }
+
+  .item2 {
+      grid-area: b;
+      background-color: #ff6961;
+  }
+
+  .item3 {
+      grid-area: c;
+      background-color: #ff964f;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-areas: 
+    'a a a a a b b b'
+    'a a a a a b b b'
+    'c c c c c b b b'
+    'c c c c c b b b';
+    padding: 10px;
+    grid-gap: 10px;
+  }
+
+  .grid-container > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  a:link {
+      text-decoration: none;
+  }
+  
+  
+
